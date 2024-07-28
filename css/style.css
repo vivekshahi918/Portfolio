@@ -27,20 +27,20 @@ html{
     background-color: rgb(10, 233, 58);
 }
 
-header{
-    position: relative;
+header {
+    position:absolute; /* Change this from fixed to relative or static */
     top: 0;
     left: 0;
     width: 100%;
     min-height: auto;
     background: #fdfdfe;
-    box-shadow: 1rem .5rem 1rem rgb(0,0,0,
-    0.1);
-    /* padding: 2rem 9%; */
+    box-shadow: 1rem .5rem 1rem rgb(0,0,0, 0.1);
     display: flex; /*two item in a row */
     align-items: center;
     justify-content: space-between;
     z-index: 15;
+    margin: 0;
+    padding: 0;
 }
 
 header a.logo img{
@@ -132,7 +132,7 @@ body{
     background:white;
 }
 section{
-    height : 100vh;
+    height : 110vh;
     padding:7.5rem 9% 2rem;
 }
 iframe {
@@ -162,7 +162,7 @@ iframe {
     width: 70%;
     border: 1px dotted;
     border-radius: 3px;
-    margin-top: 38px;
+    margin-top: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,14 +190,14 @@ iframe {
     padding-top: 5%;
     font-size: 20px;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 55px;
     block-size: 30%;
 }
 #dynamic-text {
     color: rgb(158, 6, 6);
     font-size: 22px;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 55px;
 }
 
 .about{
