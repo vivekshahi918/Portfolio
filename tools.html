@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url('./image/images/brown1.png') center /cover no-repeat;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header h1{
+            color: #00c3ff;
+            line-height: 1.5;
+            text-align: center;
+            border-radius: 0.5rem;
+            transition: background 0.5s, transform 0.5s;
+            box-shadow: 1px 1px 20px #02cefcf7,
+                        1px 1px 40px #01f9ecf7;
+            
+          }
+          @keyframes fadein {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          .letter {
+            display: inline-block;
+            position: relative;
+            animation: moveUp 1s ease forwards;
+          }
+          @keyframes moveUp {
+            from {
+              transform: translateY(100px);
+              opacity: 0;
+            }
+            to {
+              transform: translateY(0);
+              opacity: 1;
+            }
+          }
+          .fadein-box {
+            animation: fadein 4s;
+          }
+          .container{
+            width: 230px;
+            height: 230px;
+            margin: 1rem;
+            margin-top: 1rem;
+          }
+        .radical-bars{
+            width:100%;
+            display:flex;
+            height: 170px;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .radical-bars .radical-bars{
+            width: 50%;
+            height: 170px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .radical-bars .radical-bars svg{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-90deg);
+            width: 120px;
+            height: 100px;
+        }
+        #img1{
+            background: url('./image/images/msexcel.webp') center /cover no-repeat;
+        }
+        .radical-bars .radical-bars .progress-bar{
+            stroke-width: 10;
+            stop-color: rgb(16, 15, 15);
+            fill: transparent;
+            stroke-dasharray: 502;
+            stroke-dashoffset: 502;
+            stroke-linecap: round;
+            animation: animation-bar is linear forwards;
+        }
+        @keyframes animation-bar {
+            100%{
+                stroke-dashoffset:-1 ;
+            }
+        }
+        .path{
+            stroke-width: 10;
+            stroke: #0ef;
+            fill: transparent;
+            stroke-dasharray: 502;
+            stroke-dashoffset: 502;
+            stroke-linecap: round;
+        }
+        .path-1{animation: animate-path1 1s 1s linear forwards;}
+        .path-2{animation: animate-path2 1s 1s linear forwards;}
+        .path-3{animation: animate-path3 1s 1s linear forwards;}
+        .path-4{animation: animate-path4 1s 1s linear forwards;}
+        .path-5{animation: animate-path5 1s 1s linear forwards;}
+        .path-6{animation: animate-path6 1s 1s linear forwards;}
+        .path-7{animation: animate-path7 1s 1s linear forwards;}
+        .path-8{animation: animate-path8 1s 1s linear forwards;}
+        .path-9{animation: animate-path9 1s 1s linear forwards;}
+        .path-10{animation: animate-path10 1s 1s linear forwards;}
+        .path-11{animation: animate-path11 1s 1s linear forwards;}
+        .path-12{animation: animate-path12 1s 1s linear forwards;}
+
+        @keyframes animate-path1{
+            100%{
+                stroke-dashoffset: 30;
+            }
+            
+        }
+        @keyframes animate-path2{
+            100%{
+                stroke-dashoffset: 30;
+            }
+            
+        }
+        @keyframes animate-path3{
+            100%{
+                stroke-dashoffset: 60;
+            }
+            
+        }
+        @keyframes animate-path4{
+            100%{
+                stroke-dashoffset: 170;
+            }
+            
+        }
+        @keyframes animate-path5{
+            100%{
+                stroke-dashoffset: 30;
+            }
+            
+        }
+        @keyframes animate-path6{
+            100%{
+                stroke-dashoffset: 200;
+            }
+            
+        }
+        @keyframes animate-path7{
+            100%{
+                stroke-dashoffset: 60;
+            }
+            
+        }
+        @keyframes animate-path8{
+            100%{
+                stroke-dashoffset: 280;
+            }
+            
+        }
+        @keyframes animate-path9{
+            100%{
+                stroke-dashoffset: 330;
+            }
+            
+        }
+        @keyframes animate-path10{
+            100%{
+                stroke-dashoffset: 330;
+            }
+            
+        }
+        @keyframes animate-path11{
+            100%{
+                stroke-dashoffset: 330;
+            }
+            
+        }
+        @keyframes animate-path12{
+            100%{
+                stroke-dashoffset: 330;
+            }
+            
+        }
+        .radical-bars .percentage{
+            color: rgb(61, 6, 244);
+            position: absolute;
+            margin-top: 12.5rem;
+            margin-left: 3rem;
+            transform: transloation(-50%, -50%);
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .radical-bars .text{
+            color: #d9ff00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="word">
+            <pre>Tools&nbsp;and&nbsp;Framework</pre>
+        </h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">MS Excel</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/msexcel.webp" x="11" y="10" width="180" height="180"></image>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">95%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">MS Word</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img2" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/msword.png" x="11" y="10" width="180" height="180"></image>
+                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">95%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Visual Code</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img3" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/vs code.webp" x="11" y="10" width="180" height="180"></image>
+                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">90%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Word Press</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img4" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/wordpress_PNG28.png" x="30" y="30" width="140" height="140"></image>
+                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">65%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Figma</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img5" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/figmq.png" x="11" y="10" width="180" height="180"></image>
+                    <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">95%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">GitHub</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img6" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/github.png" x="40" y="40" width="120" height="120"></image>
+                    <circle class="path path-6" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">55%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Canva</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img7" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/canva.png" x="20" y="15" width="160" height="160"></image>
+                    <circle class="path path-7" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">90%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Xampp</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img8" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/Xampp.png" x="55" y="55" width="90" height="90"></image>
+                    <circle class="path path-8" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">40%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">ReactJs</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/reactjs1.png" x="11" y="10" width="180" height="180"></image>
+                    <circle class="path path-9" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">30%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Express Js</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img2" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/express-js.png" x="40" y="40" width="120" height="120"></image>
+                    <circle class="path path-10" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">30%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Next Js</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img3" cx="100" cy="100" r="80"></circle>
+                    <image  class="fadein-box" xlink:href="./image/images/nextjs.png" x="45" y="45" width="110" height="110"></image>
+                    <circle class="path path-11" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">30%</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="radical-bars">
+                <div class="text">Laravel</div>
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" id="img4" cx="100" cy="100" r="80"></circle>
+                    <image class="fadein-box" xlink:href="./image/images/laravel.png" x="35" y="35" width="140" height="140"></image>
+                    <circle class="path path-12" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">30%</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const word = document.getElementById('word');
+        const letters = word.textContent.split('');
+        word.textContent = ''; // Clear the word container
+      
+        letters.forEach((letter, index) => {
+          const span = document.createElement('span');
+          span.textContent = letter;
+          span.classList.add('letter');
+          span.style.animationDelay = `${index * 100}ms`; // Delay each letter animation
+          word.appendChild(span);
+        });
+      </script>
+</body>
+</html>

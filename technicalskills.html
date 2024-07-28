@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Skills</title>
+  <style>
+    body {
+      margin: 10px;
+      padding: 0;
+      background: #000;
+      font-family: Arial, sans-serif; 
+    }
+    header {
+      text-align: center;
+      color: #5d00ff;
+    }
+    .font {
+      text-shadow: 1px 1px 20px #fc9c02, 1px 1px 40px #01f9ecf7;
+    }
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 40px;
+      padding: 30px;
+    }
+    .skill-box {
+      background: rgba(92, 163, 207, 0.328);
+      border-radius: 0.5rem;
+      box-shadow: 1px 1px 20px #017690f7, 1px 1px 40px #01f9ecf7;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      transition: transform 0.5s;
+      opacity: 0; /* Initially hidden */
+      transform: translateY(50px); /* Initially positioned lower */
+      animation: slideUp 1s ease forwards; /* Animation definition */
+      animation-delay: var(--animation-delay); /* Use CSS variables for delay */
+    }
+    
+    @keyframes slideUp {
+      to {
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Move to original position */
+      }
+    }
+    
+    .skill-box:nth-child(1) {
+      --animation-delay: 0.1s;
+    }
+    .skill-box:nth-child(2) {
+      --animation-delay: 0.25s;
+    }
+    .skill-box:nth-child(3) {
+      --animation-delay: 0.4s;
+    }
+    .skill-box:nth-child(4) {
+      --animation-delay: 0.55s;
+    }
+    .skill-box:nth-child(5) {
+      --animation-delay: 0.70s;
+    }
+    .skill-box:nth-child(6) {
+      --animation-delay: 0.85s;
+    }
+    .skill-box:nth-child(7) {
+      --animation-delay: 1.0s;
+    }
+    .skill-box:nth-child(8) {
+      --animation-delay: 1.15s;
+    }
+    .skill-box:nth-child(9) {
+      --animation-delay: 1.30s;
+    }
+    .skill-box:nth-child(10) {
+      --animation-delay: 1.45s;
+    }
+    .skill-box:nth-child(11) {
+      --animation-delay: 1.60s;
+    }
+    .skill-box:nth-child(12) {
+      --animation-delay: 1.75s;
+    }
+    .skill-box:nth-child(13) {
+      --animation-delay: 1.90s;
+    }
+    .skill-box:nth-child(14) {
+      --animation-delay: 2.05s;
+    }
+    .skill-box:nth-child(15) {
+      --animation-delay: 2.20s;
+    }
+    .skill-box:nth-child(16) {
+      --animation-delay: 2.35s;
+    }
+    .skill-box img {
+      height: 80px;
+      margin-bottom: 10px;
+      opacity: 0; /* Initially hidden */
+      transform: translateY(50px); /* Initially positioned lower */
+      animation: fadeIn 1s ease forwards; /* Animation definition */
+      animation-delay: calc(var(--animation-delay) + 0.5s); /* Delay the image animation slightly after the container */
+    }
+    
+    @keyframes fadeIn {
+      to {
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Move to original position */
+      }
+    }
+    .skill-box a {
+      display: block;
+      font-size: 1.2rem;
+      color: #ff0062;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .skill-box a:hover {
+      color: #ff0095;
+    }
+    .skill-box::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      border: 5px solid transparent;
+      border-radius: 0.5rem;
+      animation: borderAnimation 3s infinite;
+      z-index: -1;
+    }
+    @keyframes borderAnimation {
+      0% { border-color: #ff0000; } 
+      10% { border-color: #00ff00; } 
+      20% { border-color: #0000ff; }
+      30% { border-color: #8bcb15; } 
+      40% { border-color: #2415a8; } 
+      50% { border-color: #ff0095; }
+      60% { border-color: #ff0000; } 
+      70% { border-color: #2cbc2c; } 
+      80% { border-color: #cc00ff; } 
+      90% { border-color: #00c3ff; } 
+      100% { border-color: #ffee00; }
+    }
+    @media (max-width: 900px) {
+      .skill-box img {
+        height: 65px;
+      }
+    }
+    @media (max-width: 730px) {
+      .skill-box img {
+        height: 50px;
+      }
+      .skill-box a {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="font">Technical Skills</h1>
+  </header>
+  <div class="skills-container">
+    <div class="skill-box">
+      <img src="./image/images/python.png" alt="Python">
+      <a>Python</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/java.jpg" alt="Java">
+      <a>Java</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/C.png" alt="C">
+      <a>C</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/C++.jpg" alt="C++">
+      <a>C++</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/DSA.jpg" alt="DSA">
+      <a>DSA</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/HTML.jpeg" alt="HTML">
+      <a>HTML</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/CSS.webp" alt="CSS">
+      <a>CSS</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/jS.png" alt="JavaScript">
+      <a>JavaScript</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/reactjs.png" alt="ReactJs">
+      <a>ReactJs</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/ui-ux-design.png" alt="UX-UI">
+      <a>UX-UI</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/php.png" alt="PHP">
+      <a>PHP</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/mysql.png" alt="MySQL">
+      <a>MySQL</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/Node js.png" alt="NodeJs">
+      <a>NodeJs</a>
+    </div>
+    <div class="skill-box">
+      <img src="./image/images/networking.jpg" alt="Networking">
+      <a>Networking</a>
+    </div>
+    <div class="skill-box">
+      <img src="" alt="">
+      <a></a>
+    </div>
+    <div class="skill-box">
+      <img src="" alt="">
+      <a></a>
+    </div>
+  </div>
+</body>
+</html>

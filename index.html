@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="#https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="./image/images/logo.png" alt="logo" >
+        </a>
+        <div class="word-animation">
+        <div class="animated-text" class="animateds-text" id="greeting">
+        </div>
+        <script src="script.js"></script>
+        </div>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar" id="menu">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#myskills">Skills</a></li>
+                <li><a href="#myproject">Project</a></li>
+                <!-- <li><a href="#Experience">Experience</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="box-container">
+            <div class="image-identifier">
+            <iframe src="clock.html"></iframe>
+            </div>
+            </div>
+        <div class="home-container">
+            <div class="content">
+                
+                <div id="dynamic-texts"></div>
+                <div id="dynamic-text"></div>
+        </div>
+    </div>
+    </section>
+    <section class="about" id="about">
+    <div class="content">
+    <h3>Hello, It's Me</h3>
+    <h1>Vivek Shahi</h1>
+    <h4>a dedicated B.Tech student at VIT Bhopal, specializing in <span id="element3"></span></h4>
+    <p>
+        With a passion for crafting user-friendly interfaces, I excel in HTML, CSS, and JavaScript. Diligent and detail-oriented, I am committed to creating engaging and responsive web experiences. Eager to contribute my skills and creativity to innovative projects.
+    </p>
+    <div class="home-sci">
+        <a href="https://www.instagram.com/vivek_._shahi/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/vivek-shahi-1803v918/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/vivekshahi918"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.threads.net/@vivek_._shahi"><i class="fa-brands fa-threads"></i></a>
+    </div>
+    <a href="https://drive.google.com/file/d/14_EU9ordvF5R7DeEQuRDJngWX5eUY2or/view?usp=sharing" class="btn">Download Resume</a>
+    </div>
+    <div class="image">
+        <img src="./image/images/wallpaper.png" alt="Mobile">
+    </div>
+    </section>
+    <section class="myskills" id="myskills">
+        <h1 class="heading">
+            <span id="elements"></span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./image/images/technical.webp" alt="">
+                <h3>
+                    Technical Skills
+                </h3>
+                <p>          
+                    Proficient in languages like C++, Java, and Python, with expertise in web development using HTML, CSS, and JavaScript, and a solid foundation in algorithms, and data structures.
+                </p>
+                <a class="btn" id="popup-button" onclick="openPopup()">
+                    Read More
+                </a>
+            </div>
+            <div class="box" id="box1">
+                <img src="./image/images/tools-image.avif" alt="">
+                <h3>
+                    Technology Stack
+                </h3>
+                <p>
+                    Proficient In Utilizing Tools And Frameworks Such As React, Angular, Visual Studio Code, Eclipse, MySQL, And MongoDB For Effective Software Development And Web Application Design.
+                </p>    
+                <a class="btn" id="popup-button" onclick="openPopups()">
+                    Read More
+                </a>
+            </div>
+            <div class="box">
+                <img src="./image/images/softskills_image.jpg" alt="">
+                <h3>
+                    Soft Skills
+                </h3>
+                <p>
+                    Possessing strong soft skills, I excel in effective communication, problem-solving, and collaborative teamwork, enhancing my adaptability, attention to detail, and leadership in diverse situations.
+                </p>
+                <a  class="btn" id="popup-button" onclick="openPopupss()">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="myproject" id="myproject">
+        <h1 class="headings">
+            <span id="elementss"></span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./image/images/fitclub.png" alt="">
+                <h3>
+                   Fit Club
+                </h3>
+                <p>         
+                    <h4>Description</h4><h7>"A modern, responsive fitness club website template designed with React, emphasizing UX/UI excellence"</h7>
+                </p>
+                <p>
+                    <h4>Technology</h4><h7>React</h7>
+                </p>
+                <a href="https://vivekshahi918.github.io/Fit-club-starter-master/" class="btn">
+                    See WebPage
+                </a>
+            </div>
+            <div class="box">
+                <img src="./image/images/fitclub.png" alt="">
+                <h3>
+                   Fit Club
+                </h3>
+                <p>         
+                    <h4>Description</h4><h7>"A modern, responsive fitness club website template designed with React, emphasizing UX/UI excellence"</h7>
+                </p>
+                <p>
+                    <h4>Technology</h4><h7>React</h7>
+                </p>
+                <a href="https://vivekshahi918.github.io/Fit-club-starter-master/" class="btn">
+                    See WebPage
+                </a>
+            </div>
+            <div class="box">
+                <img src="./image/images/Qrcode.png" alt="">
+                <h3>
+                    QR code Generator 
+                </h3>
+                <p>          
+                    <h4>Description</h4>
+                    <h7>"Generate custom QR codes instantly for any type of content with ease."</h7>
+                </p>
+                <p>
+                    <h4>Technology</h4><h7>HTML, CSS and JavaScript</h7>
+                </p>
+                <a href="https://vivekshahi918.github.io/Small-Project/QR%20Code%20genrator/" class="btn">
+                    See WebPage
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="Experience" id="Experience"> 
+    </section> -->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>
+                    Quick Links
+                </h3>
+                <a href="#home" class="text-animation" id="scale-up">Home</a>
+                <a href="#about" class="text-animation" id="scale-up">About</a>
+                <a href="#myskills" class="text-animation" id="scale-up">My Skills</a>
+                <a href="#myproject" class="text-animation" id="scale-up">My Project</a>
+                <!-- <a href="#Experience" class="text-animation" id="scale-up">My Experience</a> -->
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="https://www.instagram.com/vivek_._shahi/" class="text-animation" id="scale-up">Instagram</a>
+                <a href="https://www.linkedin.com/in/vivek-shahi-1803v918/" class="text-animation" id="scale-up">LinkedIn</a>
+                <a href="https://github.com/vivekshahi918" class="text-animation" id="scale-up">Github</a>
+                <a href="https://www.threads.net/@vivek_._shahi" class="text-animation" id="scale-up">Thread</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                        <p>
+                            +91 9555392624 <br>
+                            +91 9956322891
+
+                        </p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>
+                        shahivivek503@gmail.com <br>
+                        vivekshahi2022@vitbhopal.ac.in
+                    </p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                        Barhalganj, Gorakhpur ,Utter Pradesh
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit">
+            &copy; copyright @2024 By Vivek Shahi
+        </h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#elements', {
+          strings: ['My Skills',],
+          typeSpeed: 80,
+        });
+        var typed = new Typed('#elementss', {
+            strings: ['My Project',],
+            typeSpeed: 80,
+        });
+        var typed = new Typed('#element3',{
+            strings: ['Fronted Developing ,', 'Graphic Designing ,', 'Coding ,'],
+            typeSpeed: 150,
+            backSpeed: 0,
+            loop: true,
+            showCursor: false, 
+            startDelay: 1000, 
+        });
+      </script>
+      <script>
+        const lines = ["The only limit to our realization of tomorrow will be our doubts of today.",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+         "The only way to do great work is to love what you do.","You are never too old to set another goal or to dream a new dream.","Don't watch the clock; do what it does. Keep going.","Your time is limited, don't waste it living someone else's life.","The only person you are destined to become is the person you decide to be.","In the middle of difficulty lies opportunity.","The best way to predict the future is to create it.","Success is stumbling from failure to failure with no loss of enthusiasm.","The future belongs to those who believe in the beauty of their dreams."
+        ];
+        let currentLinesIndex = 0;
+        function updateText() {
+            document.getElementById('dynamic-texts').textContent = lines[currentLinesIndex];
+            currentLinesIndex = (currentLinesIndex + 1) % lines.length;
+          }
+          updateText();
+          // Update text every 10 sec
+          setInterval(updateText,10*1000);
+      </script>
+      <script>
+        const line = ["-By Franklin D. Roosevelt","-By Winston Churchill","-By Steve Jobs","-By C.S. Lewis","-By Sam Levenson","-By Steve Jobs","-By Ralph Waldo Emerson","-By Albert Einstein","-By Peter Drucker","-By Winston Churchill","-By Eleanor Roosevelt"];
+        let currentLineIndex = 0;
+        function updateTexts() {
+            document.getElementById('dynamic-text').textContent = line[currentLineIndex];
+            currentLineIndex = (currentLineIndex + 1) % line.length;
+          }
+          updateTexts();
+          // Update text every 10 sec
+          setInterval(updateTexts, 10*1000);
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var menuBar = document.getElementById("menu-bar");
+          var menuItems = document.querySelectorAll("#menu li");
+
+          menuItems.forEach(function(item) {
+            item.addEventListener("click", function() {
+              menuBar.checked = false; 
+            });
+          });
+        });
+        </script>
+        <script>
+            window.onload = function() {
+                // Fetch the HTML content
+                fetch('.clock.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Insert the HTML content into the container
+                        document.getElementById('html-content').innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching the HTML content:', error);
+                    });
+            };
+        </script>  
+        <script>
+                function updateBackground() {
+                    var currentTime = new Date();
+                    var currentHour = currentTime.getHours();
+                
+                    var imageUrl;
+              
+                    if (currentHour >= 6 && currentHour < 12) {
+                        imageUrl = "morning.jpg";
+                    } else if (currentHour >= 12 && currentHour < 15) {
+                        imageUrl = "afternoon.jpg";
+                    } else if (currentHour >= 15 && currentHour < 19) {
+                        imageUrl = "evening.jpg";
+                    } else {
+                        imageUrl = "night.jpg";
+                    }
+                    
+                    var elements = document.getElementsByClassName("image-identifier");
+                    
+                    for (var i = 0; i < elements.length; i++) {
+                        elements[i].style.backgroundImage = "url('" + imageUrl + "')";
+                    }
+                }
+                
+                updateBackground();
+              
+                setInterval(updateBackground, 60000);
+        </script>
+        <script>
+                    function openPopup() {
+                        
+                        var foggyBackground = document.createElement('div');
+                        foggyBackground.classList.add('foggy');
+                        document.body.appendChild(foggyBackground);
+                    
+                        // Specify the URL of the index.html page you want to open
+                        var url = 'technicalskills.html';
+                        
+                        // Open the specified URL in the same tab
+                        window.location.href = url;
+                    }
+        </script>
+        <script>
+                        function openPopups() {
+                            
+                            var foggyBackground = document.createElement('div');
+                            foggyBackground.classList.add('foggy');
+                            document.body.appendChild(foggyBackground);
+                        
+                            // Specify the URL of the index.html page you want to open
+                            var url = 'tools.html';
+                            
+                            // Open the specified URL in the same tab
+                            window.location.href = url;
+                        }
+        </script>
+        <script>
+            function openPopupss() {
+                
+                var foggyBackground = document.createElement('div');
+                foggyBackground.classList.add('foggy');
+                document.body.appendChild(foggyBackground);
+            
+                // Specify the URL of the index.html page you want to open
+                var url = 'softskills.html';
+                
+                // Open the specified URL in the same tab
+                window.location.href = url;
+            }
+</script>
+                           
+      <script src="https://kit.fontawesome.com/10a6090481.js" crossorigin="anonymous"></script>
+</body>
+</html>
